@@ -13,7 +13,7 @@ ul{
 
 }
 ul li{
-
+    
     display:inline-block;
     justify-content: space-between;
     padding:10px
@@ -87,11 +87,46 @@ background-color: aqua;
    
 }
 #stop{
-
+    margin-top: 0.5cm;
     margin-left:45px;
     height: 40px;
     width: 56px;
+    display: block;
     
 }
 
-    
+#Normal{
+
+    margin-left: 45px;
+    height: 40px;
+    width: 56px;
+    margin-top: 1cm;
+    display: block;
+}  
+#High{
+
+    margin-top: 0.5cm;
+    margin-left:45px;
+    height: 40px;
+    width: 56px;
+
+}
+#Max{
+
+    margin-top: .5cm;
+    margin-left:45px;
+    height: 40px;
+    width: 56px;
+    display: block;
+
+}
+.btn{
+background:transparent;
+border:0.9px solid;
+border-radius: 6px;
+width: 4cm;
+margin-top: 0.5cm;
+padding: 0.4cm;
+margin-left: 4cm;
+
+}
