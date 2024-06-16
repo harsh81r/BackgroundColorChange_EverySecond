@@ -12,10 +12,9 @@ const randomcolor = function(){
 
         return color;
         
-        
         }
 
-
+//start_Button
 let interval;
 const startcolor = function(){
 if(!interval)
@@ -31,15 +30,84 @@ function randomcolorfun (){
 }
 };
 
+//Normal
+
+let interval1;
+const startcolor1 = function(){
+if(!interval1)
+    {
+interval1=setInterval(randomcolorfun,900)
+    }
+// interval=null;
+
+function randomcolorfun (){
+
+    document.body.style.backgroundColor=randomcolor();
+
+}
+};
+
+
+//High
+
+let interval2;
+const startcolor2 = function(){
+if(!interval2)
+    {
+interval2=setInterval(randomcolorfun,500)
+    }
+// interval=null;
+
+function randomcolorfun (){
+
+    document.body.style.backgroundColor=randomcolor();
+
+}
+};
+
+
+//Max
+let interval3;
+const startcolor3 = function(){
+if(!interval2)
+    {
+interval3=setInterval(randomcolorfun,10)
+    }
+// interval=null;
+
+function randomcolorfun (){
+
+    document.body.style.backgroundColor=randomcolor();
+
+}
+};
+
+//stopbutton
 const StopInterval = function()
 {
 
     clearInterval(interval)
     interval=null;
+ 
+clearInterval(interval1)
+interval1=null;
+
+clearInterval(interval2)
+interval2=null;
+
+clearInterval(interval3)
+interval3=null;
+
+
 }
 document.querySelector('#start').addEventListener('click',startcolor);
-
 document.querySelector('#stop').addEventListener('click',StopInterval);
+document.querySelector('#Normal').addEventListener('click',startcolor1);
+document.querySelector('#High').addEventListener('click',startcolor2);
+document.querySelector('#Max').addEventListener('click',startcolor3);
+
+
+
 
 
 // console.log(randomcolor()
